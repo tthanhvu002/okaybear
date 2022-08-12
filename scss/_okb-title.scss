@@ -1,0 +1,113 @@
+.okb-title {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 180px;
+  position: relative;
+  font-size: 8rem;
+  text-transform: uppercase;
+  height: 80vh;
+  color: $beige-txt;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  .img-wrap{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    img{
+      height: 320px;
+    width: 250px;object-fit: cover;
+    }
+  }
+
+  
+  }
+
+  .color-imgs {
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    height: 420px;
+
+    .bear-txt {
+      position: absolute;
+      right: 22%;
+      bottom: 0;
+    }
+  }
+  .o-div {
+    margin-right: -25px;
+  }
+  .k-div {
+    margin-right: -47px;
+  }
+  .a-div {
+    margin-left: -4%;
+  }
+  .y-div {
+  }
+  img {
+    display: inline-block;
+    height: 100%;
+    margin-right: 0px;
+    padding-right: 0px;
+    opacity: 1;
+    mix-blend-mode: multiply;
+  }
+  .black-imgs {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 800px;
+    display: flex;
+    height: 420px;
+    margin: 0 auto;
+    justify-content: center;
+    .o-div:hover,
+    .k-div:hover,
+    .a-div:hover,
+    .y-div:hover {
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .okb-title {
+    margin-top: 300px;
+    .color-imgs {
+      .bear-txt {
+        right: 7%;
+      }
+    }
+    .black-imgs {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .okb-title {
+    margin-top: 160px;
+    .color-imgs {
+      justify-content: unset;
+      background-image: url(https://assets-global.website-files.com/622eead55797fc2865c24818/62d811b317f57f2b17a752d3_OKMobile-min.png);
+      background-size: 375px;
+      background-repeat: no-repeat;
+      .o-div,
+      .k-div,
+      .a-div,
+      .y-div {
+        display: none;
+      }
+    }
+    .bear-txt {
+      display: none;
+    }
+    .black-imgs {
+      display: none;
+    }
+  }
+}

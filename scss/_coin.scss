@@ -1,0 +1,125 @@
+.coin-image{
+    margin-top: 140px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    justify-content: center;
+    .coin-item{
+        width: calc(16.66666% - 20px);
+        border-radius: 10px;
+        overflow: hidden;
+        img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.okb-section{
+    padding: 100px 0;
+}
+.heading{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 35px;
+}
+.darkbrown{
+    background-image: url(https://assets-global.website-files.com/622eead55797fc2865c24818/62e86e9e8aa3c23f0b94a7a2_BG_2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .heading{
+        color: #f3eadb;
+    }
+}
+.okb-bigtext {
+    max-width: 631.3333px;
+    text-align: center;
+    line-height: 140%;
+    margin: 0 auto;
+    color: #916b46;
+    font-size: 20px;
+    font-weight: 400;
+}
+.okb-bigtext.light{
+    color: #f3eadb;
+}
+
+img{
+    margin: 0 auto;
+}
+.okb-section.light{
+    background-color: #f3eadb;
+}
+
+.faq-section{
+    margin: 0 auto;
+    padding: 80px 0 ;
+    .faq-row{
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        gap: 60px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .faq-div{
+        .faq-q{
+            margin-top: 0px;
+            margin-bottom: 1rem;
+            color: #402d28;
+            font-weight: 500;
+            font-size: 2.5rem;
+        }
+        p{
+            color: #916b46;
+            font-size: 1.25rem;
+            line-height: 140%;
+        }
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .three-coin{
+        width: 492px;
+        margin-bottom: 50px;
+    }
+    .faq-section{
+        .faq-div{
+            .faq-q{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .heading{
+        max-width: 279px;
+    }
+    .okb-bigtext{
+        max-width: 279px;
+        font-size: 0.85rem;
+    }
+    .coin-image{
+        img{
+            display: none;
+        }
+        .mb{
+            display: block !important;
+        }
+    }
+    .faq-section{
+        .faq-div{
+            p{
+                font-size: 0.85rem;
+            }
+            .faq-q{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

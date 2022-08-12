@@ -1,0 +1,51 @@
+.manifesto {
+  position: relative;
+  background-color: $beige;
+    &-text{
+        margin-top: 150px;
+        text-align: left;
+        padding-left: 120px;
+        p, .sub-heading, .heading{
+            margin: 0;
+            text-align: left;
+        }
+        padding-bottom: 60px;
+    }
+  &-okhand {
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 3vw;
+    bottom: 0%;
+    height: 90%;
+    min-width: 50vw;
+    background-image: url(/img/manifesto-img.png);
+    background-position: 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .manifesto{
+        height: 100vh;
+        &-text{
+            padding-left: 65px;
+            width: 60%;
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .manifesto{
+        height: 100vh;
+        &-text{
+            width: 100%;
+            padding: 0 30px;
+        }
+        &-okhand{
+            position: relative;
+            width: 187px;
+            height: 225px;
+            margin-left:auto ;
+        }
+    }
+}

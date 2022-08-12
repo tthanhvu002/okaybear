@@ -1,0 +1,72 @@
+.connect-section {
+  padding: 0 120px;
+  margin-top: 150px;
+  min-height: 100vh;
+  h2 {
+    font-size: 4.5rem !important;
+    line-height: 1 !important;
+    font-weight: 700;
+    color: $beige-txt;
+    font-family: "DM Sans";
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $beige-txt;
+    opacity: 0.7 !important;
+    font-size: 1.825rem;
+    font-family: "DM Sans";
+  }
+  .connect-btn {
+    padding: 3rem;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    background-color: #ffe4c4a2;
+    width: 400px;
+    transition: 0.3s linear;
+    img {
+    }
+    &:hover{
+      background-color: orange;
+    }
+  }
+
+}
+.connect-wallet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fed7aa;
+  bottom: 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  p{
+    color: brown;
+  }
+
+  span{
+      background-color: orange;
+      opacity: 0.7;
+      padding: 4px;
+      border-radius: 5px;
+      color: #fff;
+      transition: 0.2s ease-in;
+      &:hover{
+        opacity: 1;
+      }
+  }
+  img {
+      position: absolute;
+      width: 317px;
+      height: 308px;
+      top: -308px;
+  }
+}

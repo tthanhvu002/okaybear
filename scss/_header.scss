@@ -1,0 +1,120 @@
+.header{
+    background-color: transparent;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .coming-soon{
+        opacity: 0;
+        transition: 0.2s ease;
+        position: absolute;
+        height: 28px;
+        top: -74%;
+        width: fit-content;
+
+        right: -18%;
+        left: 25px;
+        padding: 3px;
+        border-radius: 2px;
+        background-color: orange;
+        color: #fff9f0;
+        font-size: 0.6rem;
+        text-align: center;
+        letter-spacing: 0.12em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        &.active{
+            opacity: 1;
+        }
+    }
+
+    &-mobile-bars{
+        display: none;
+    }
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &-logo{
+        width: 100px;
+        height: 53px;
+        font-size: 30px;
+        color: $beige-txt;
+        text-transform: capitalize;
+        img{
+
+        }
+    }
+    &-nav{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        
+        li {
+            position: relative;
+            background-color: $beige;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: 0.2s ease-in-out;
+            &:hover{
+                background-color: #fff;
+            }
+            a{
+                text-transform: uppercase;
+                color: $beige-txt;
+            }
+
+            .news-noti{
+                position: absolute;
+                left: auto;
+                top: -34%;
+                right: -18%;
+                bottom: 0%;
+                width: 2.2rem;
+                height: 1rem;
+                background-color: orange;
+                border-radius: 2px;
+                color: #fff9f0;
+                font-size: 0.6rem;
+                letter-spacing: 0.12em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+
+    .header-mobile-bars{
+        display: none;
+        background-color: #f3eadb;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 3px;
+        i{
+            color: $beige-txt;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .header{
+        .header-nav{
+            display: none;
+        }
+        .header-mobile-bars{
+            display: flex ;
+        }
+    }
+}
